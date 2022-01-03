@@ -6,7 +6,6 @@ export default function App() {
   return (
     <div>
       <Form />
-      <h1>This is App.js</h1>
     </div>
   );
 }

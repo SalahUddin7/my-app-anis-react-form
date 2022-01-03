@@ -1,3 +1,7 @@
+* {
+  width: 600px;
+}
+
 button {
   padding: 5px;
   border: none;

@@ -4,11 +4,11 @@ import './style.css';
 export default function Form() {
   const [user, setUser] = useState({
     name: '',
-    email: '',
-    password: '',
+    price: '',
+    image: '',
   });
 
-  const { name, email, password } = user;
+  const { name, price, image } = user;
 
   const handleChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
@@ -21,7 +21,7 @@ export default function Form() {
 
   return (
     <div>
-      <h1>Register</h1>
+      <h1>Please create your shopping list using below Form</h1>
       <form onSubmit={handleSubmit}>
         <div>
           <label>Name : </label>
@@ -35,28 +35,28 @@ export default function Form() {
           />
         </div>
         <div>
-          <label>Email : </label>
+          <label>Price : </label>
           <input
             onChange={handleChange}
-            value={email}
-            type="email"
-            name="email"
-            id="email"
+            value={price}
+            type="number"
+            name="price"
+            id="price"
             required
           />
         </div>
         <div>
-          <label>Password : </label>
+          <label>Image (optional): </label>
           <input
             onChange={handleChange}
-            value={password}
-            type="password"
-            name="password"
-            id="password"
-            required
+            value={image}
+            type="image"
+            alt="click to upload"
+            name="image"
+            id="image"
           />
         </div>
-        <button type="submit">Register</button>
+        <button type="submit">Submit</button>
       </form>
     </div>
   );
