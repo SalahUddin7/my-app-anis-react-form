@@ -24,24 +24,26 @@ export default function Form() {
       <h1>Please create your shopping list using below Form</h1>
       <form onSubmit={handleSubmit}>
         <div>
-          <label>Name : </label>
+          <label>Name of Item: </label>
           <input
             onChange={handleChange}
             value={name}
             type="text"
             name="name"
             id="name"
+            placeholder="Type here.............."
             required
           />
         </div>
         <div>
-          <label>Price : </label>
+          <label>Price in SEK: </label>
           <input
             onChange={handleChange}
             value={price}
             type="number"
             name="price"
             id="price"
+            placeholder="Type only numbers"
             required
           />
         </div>
@@ -56,7 +58,7 @@ export default function Form() {
             id="image"
           />
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit">Add</button>
       </form>
     </div>
   );
