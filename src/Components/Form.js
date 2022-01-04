@@ -21,29 +21,29 @@ export default function Form() {
 
   return (
     <div>
-      <h1>Please create your shopping list using below Form</h1>
+      <h1>Create a Digital Shopping List</h1>
       <form onSubmit={handleSubmit}>
         <div>
-          <label>Name of Item: </label>
+          <label> </label>
           <input
             onChange={handleChange}
             value={name}
             type="text"
             name="name"
             id="name"
-            placeholder="Type here.............."
+            placeholder="Type product name here.............."
             required
           />
         </div>
         <div>
-          <label>Price in SEK: </label>
+          <label> </label>
           <input
             onChange={handleChange}
             value={price}
             type="number"
             name="price"
             id="price"
-            placeholder="Type only numbers"
+            placeholder="Type prices in SEK........................."
             required
           />
         </div>
